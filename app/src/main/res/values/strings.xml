@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DRINK!</string>
+    <string name="title_activity_game">Play</string>
+    <string name="title_activity_wrong">Wrong</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_quest">Quest</string>
+</resources>

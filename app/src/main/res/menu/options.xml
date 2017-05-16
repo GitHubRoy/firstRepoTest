@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/playersOption"
+        android:title="Deelnemers"
+        />
+
+    <item android:id="@+id/historyOption"
+        android:title="Geschiedenis"
+        />
+
+    <item android:id="@+id/about"
+        android:title="Over"
+        />
+
+    <item android:id="@+id/resetOption"
+        android:title="Reset"
+        />
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="nl.saxion.ap.drink.MainActivity">
+
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/addNameButton"
+        android:hint="Vul een naam in"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/namesView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/difficultyInput"
+        android:layout_below="@+id/nameInput"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Naar spel."
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Voeg Toe" />
+
+    <Button
+        android:id="@+id/difficultySaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startGameButton"
+        android:layout_alignStart="@+id/addNameButton"
+        android:layout_below="@+id/namesView"
+        android:text="Opslaan" />
+
+    <EditText
+        android:hint="Aantal goed voor opdracht"
+        android:id="@+id/difficultyInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startGameButton"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/difficultySaveButton"
+        android:inputType="number" />
+
+</RelativeLayout>
